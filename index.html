@@ -9,240 +9,51 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
 
-<!------header design------>
+    <!------header design------>
+    <header class="header">
+        <a href="#" class="logo">SazidR.</a>
 
-<div id="header">
-    <div class="container">
-        <video autoplay loop muted plays-inline class="background-video">
-            <source src="Video/Background_video-2.mp4" type="video/mp4">
-        </video>
-        <nav>
-            <a href="#" class="logo">SazidR.</a>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <div class="header-test">
-            <p>Programmer</p>
-            <h1>Hi, I'm <span>Sazid</span><br>Future Bruce Wayne</h1>
-        </div>
-    </div>
-    
-</div>
+    </header>
 
-<!-- ------------about------------ -->
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/Image.jpg">
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Sazidur Rahman</span></h1>
+            <div class="class-animate">
+                <h3>Programmer</h3>
             </div>
-            <div class="about-col-2">
-                <h1 clsss="sub-title">About Me</h1>
-                <p>Ami Bokachoda, kono kaj kam nai tai ulta plata kaj kore
-                    berai. Poralikai konodino bhalo cilam na. Eto taka poisha
-                    nosto korteche taw bhalo kicu korte parchi na, Ki ekta
-                    obostha, ty ekhon somoy nosto korte esob bal sal banaccci.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Problem Solving</span><br>CodeForces, LeetCode</li>
-                            <li><span>Projects</span><br>New, Upgrade</li>
-                            <li><span>App Development</span><br>Building iOS</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2026</span><br>Something big</li>
-                            <li><span>2025</span><br>Intern, Elon Musk's SpaceX</li>
-                            <li><span>2022</span><br>Landed here</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022 - 2026(Running)</span><br>Computer Science and Engineering, Brac University</li>
-                            <li><span>2020</span><br>HSC, Navy School and Collage</li>
-                            <li><span>2018</span><br>SSC, Bagerhat Govt high School</li>
-                        </ul>
-                    </div>
+            <p>jdfn kdnfkf  jsfs fjsnfns fsf nsjf sfsjnjd fs fs fnksfsfks fk skf fkdnf
+                fsbfjnsfjnsnfjsfsfs fjk sfnsjknfksfsfsmklmdkf sfdfkmdfmdfkmdkmfkds;mfd
+                flknsklfksfmslkmfd nsdfd flkmdksf ske s dk fkdf sflf s fkss gskgkeg kks
+                dmf md fdlsdfmkd kmfkdf.
+            </p>
+            
+            <div class="btn-box">
+                <a href="a" class="btn">Hire me</a>
+                <a href="a" class="btn">Let's talk</a>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
 
-<!-- ----------services---------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-bug fa-beat"></i>
-                <h2>Coding</h2>
-                <p1>For a Programmer it's important to know codes well. For that practicing is very important.
-                    There are many website who teaches us how to slove these problems, and i will also help you to
-                    solve problems.</p1>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-microchip"></i>
-                <h2>Projects</h2>
-                <p1>For a Programmer Projects are very important, cause doing differnet kind of Projects help you to
-                    understand code better. In that case i will help you in differnet kind of projectss.</p1>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-barcode"></i>
-                <h2>App Develop</h2>
-                <p1>After doing lots of projects, It will be easier for you to development new things or you
-                    can you upgrade old things and make it new. In that case i will also help you to understand it 
-                    better.</p1>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- ----------portfolio---------- -->
-
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/Wok1.jpg">
-                <div class="layer">
-                    <h3>Alien Shooter</h3>
-                    <p>This Alien shooter game will shoot alien spaceship. It is a fun game to play. Lets play
-                        it someday and lets see who score better.</p>
-                    <a href="#"><i class="fa-solid fa-link fa-shake"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/PhoneBackground.jpg">
-                <div class="layer">
-                    <h3>Music App</h3>
-                    <p>Everyone listen music but people love to enjoy music in a place where they can store
-                        all the music togater and download it, my app will help you to do it.</p>
-                    <a href="#"><i class="fa-solid fa-link fa-shake"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/Work3.jpg">
-                <div class="layer">
-                    <h3>Shopping Cart</h3>
-                    <p>This shoping cart app will help people to shop from anywhere. They can shop their
-                        favorite thing from online and order it whenever you want.</p>
-                    <a href="#"><i class="fa-solid fa-link fa-shake"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-    </div>
-</div>
-
-<!-- ----------contact---------- -->
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope fa-bounce" style="color: #ff004f;"></i> sazidur936@gmail.com</p>
-                <p><i class="fa-solid fa-phone fa-fade" style="color: #ff004f;"></i> 01700948734</p>
-                <div class="github">
-                    <a href="https://github.com/rsazidur"><i class="fa-brands fa-github fa-flip" style="color: #ff004f;"></i>Check My GitHub</a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://facebook.com/sazidur936"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a href="CV/CV.txt" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form class="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="text" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Created By <span>Sazidur Rahman</span> | © 2023 All right reserved</p>
-    </div>
-</div>
-
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for (tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-
-        for (tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<script>
-
-    var sidemnu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemnu.style.right = "0";
-    }
-    function closemenu(){
-        sidemnu.style.right = "-200px";
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCigwLOk7mZfj_FiZYaEtPgZGeItMHzkLHUZubeesBDfmvcWrC3pqNV6JIKJ1krgwC/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message send successfully"
-            setTimeout(function(){
-                msg.innerHTML
-            },3000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
-
+    <script scr="js/script.js"></script>
 </body>
+
 </html>
